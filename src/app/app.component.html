@@ -1,0 +1,13 @@
+<div *ngIf = 'appStatus'>{{appTitle}} Tutorialspoint
+</div>
+
+<ng-template #loggedOut>
+  Please friend, login.
+</ng-template>
+
+<div *ngFor = 'let lst of appList'>
+   <ul>
+      <li><h1><b>{{lst.ID}}</b></h1></li>
+      <img [src] = 'lst.url'>
+   </ul>
+</div>
